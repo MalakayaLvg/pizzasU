@@ -1,7 +1,6 @@
 <?php
 namespace Core\Repository;
 
-use App\Entity\Pizza;
 use Core\Attributes\Table;
 use Core\Attributes\TargetEntity;
 use Core\Database\PDOMySQL;
@@ -49,7 +48,7 @@ abstract class Repository
         return $items;
     }
 
-    public function find(int $id):array
+    public function find(int $id):object
     {
 
 

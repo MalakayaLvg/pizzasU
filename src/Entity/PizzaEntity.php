@@ -13,6 +13,7 @@ class PizzaEntity
 {
     private string $name;
     private string $size;
+    private int $id;
 
     public function getName(): string
     {
@@ -32,5 +33,15 @@ class PizzaEntity
     public function setSize(string $size): void
     {
         $this->size = $size;
+    }
+
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    public function setId(int $id): void
+    {
+        $this->id = $id;
     }
 }
